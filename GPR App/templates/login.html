@@ -1,0 +1,22 @@
+
+  <ion-content class="login" scroll="true">
+    <img src="img/logo.png" class="logo">
+      <h1>GPR</h1>
+      <h2>Football Club</h2>
+    <form name="loginForm">
+      <div class="list">
+        <label>
+          <input type="text" placeholder="Email" ng-model="loginData.username" required>
+        </label>
+        <label>
+          <input type="password" placeholder="Password" ng-model="loginData.password" required>
+        </label>
+      </div>
+          <label>
+            <button class="button large" data-ng-click="login()" type="submit">LOGIN</button>
+          </label>
+    </form>
+       
+  </ion-content>
+
+

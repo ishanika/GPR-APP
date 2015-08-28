@@ -1,0 +1,93 @@
+<ion-side-menus ng-init="getLoggedInUser()">
+    <ion-pane ion-side-menu-content>
+    <ion-nav-bar class="bar-stable nav-title-slide-ios7">
+        
+      <!--<ion-nav-back-button class="button-clear"><i class="icon ion-ios7-arrow-back"></i> Back</ion-nav-back-button>-->
+   
+        </ion-nav-bar>
+    <ion-nav-view name="menuContent" animation="slide-left-right"></ion-nav-view>
+  </ion-pane>
+
+
+  <ion-side-menu side="left" class="gpr">
+    <ion-header-bar class="bar-stable">
+          <h1 class="title">Menu</h1>
+    </ion-header-bar>
+    <ion-content class="has-header">
+      <ion-list>
+           <ion-item class="item-icon-left">
+          <i class="icon bh-user"></i>
+          Logged in as:
+          <span class="calm">
+            <b>
+              {{$rootScope.LoggedInUser}}
+            </b>
+          </span>
+        </ion-item>
+         <ion-item menu-close class="item-icon-left" ui-sref="app.teams" ui-sref-opts="{ reload: true,  inherit:false }">
+          <icon ios="ion-ios-home" default="ion-home"></icon>
+          TEAMS
+        </ion-item>
+        <ion-item menu-close class="item-icon-left" ui-sref="app.squad" ui-sref-opts="{ reload: true,  inherit:false }">
+          <icon ios="ion-ios-home" default="ion-home"></icon>
+          SQUAD
+        </ion-item>
+        <ion-item menu-close class="item-icon-left" ui-sref="app.playlists">
+          <icon ios="ion-ios-star" default="ion-star"></icon>
+           FIXTURES
+        </ion-item>
+        <ion-item menu-close class="item-icon-left" href="#/app/browse">
+          <icon ios="ion-ios-information" default="ion-information-circled"></icon>
+          RESULTS
+        </ion-item>
+        <!--<ion-item nav-clear menu-close ng-click="testLoginStatus()" href="#/app/squad">
+          SQUAD
+        </ion-item>
+        <ion-item nav-clear menu-close ng-click="testLoginStatus()" href="#/app/browse">
+          FIXTURES
+        </ion-item>
+        <ion-item nav-clear menu-close ng-click="testLoginStatus()" href="#/app/playlists">
+          RESULTS
+        </ion-item>-->
+       
+        <ion-item menu-close class="item-icon-left" ng-click="logout()">
+            <i class="icon ion-log-out"></i>
+            LOG OUT
+        </ion-item>
+          <ion-item menu-close class="item-icon-left" ng-click="testLoginStatus()">
+            <i class="icon ion-log-out"></i>
+           testLoginStatus
+        </ion-item>
+      </ion-list>
+	</ion-content>
+      <!--<ion-content>
+      <ion-list>
+        <ion-item class="item-icon-left">
+          <i class="icon bh-user"></i>
+          Logged in as:
+          <span class="calm">
+            <b>
+              {{user.firstname + " " + user.lastname}}
+            </b>
+          </span>
+        </ion-item>
+        <ion-item nav-clear menu-close ng-click="testLoginStatus()" href="#/app/squad">
+          SQUAD
+        </ion-item>
+        <ion-item nav-clear menu-close ng-click="testLoginStatus()" href="#/app/browse">
+          FIXTURES
+        </ion-item>
+        <ion-item nav-clear menu-close ng-click="testLoginStatus()" href="#/app/playlists">
+          RESULTS
+        </ion-item>
+        <ion-item menu-close ng-click="logout()">
+          LOG OUT
+        </ion-item>
+          
+      </ion-list>
+        
+          </ion-content>-->
+
+    
+  </ion-side-menu>
+</ion-side-menus>

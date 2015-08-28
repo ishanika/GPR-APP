@@ -1,0 +1,27 @@
+<ion-view title="Teams" ng-init="getLoggedInUser();getAllTeams()">
+  <ion-nav-buttons side="left">
+    <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+  <ion-content class="has-header">
+    <ion-list>
+        <ion-item ng-repeat="team in teams">
+                <span class="item-icon-right" ng-click="viewRequest(team.Id)">
+                    <i class="icon ion-arrow-right-b"></i>
+                        {{team.Name}}
+                </span>
+
+       </ion-item>
+         <!--<ion-item ng-repeat="(key, value) in teams | groupBy: 'ClubId'">
+                <span class="item-icon-right" ng-click="viewRequest(key)">
+                    <i class="icon ion-arrow-right-b"></i>
+                        {{key}}
+                </span>
+
+       </ion-item>
+
+     <ion-item ng-repeat="team in teams" href="/app/squad/{{team.Id}}">
+        {{team.Name}}
+      </ion-item>-->
+    </ion-list>
+  </ion-content>
+</ion-view>
