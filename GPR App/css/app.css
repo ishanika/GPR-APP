@@ -1,0 +1,51 @@
+.login {background:#33465d url('../img/Bg.jpg') no-repeat top center; text-align: center; padding: 0 3rem; background-size: cover}
+.login img.logo {width: 40%; padding-left: 10px; margin-top: 4rem}
+.login h1 {text-transform: uppercase; color: #fff; font-size: 4rem; font-weight: 700; margin: 0;}
+.login h2 {text-transform: uppercase; color: #00bff0; font-size: 1.7rem; font-weight: 700; margin: -20px 0 80px 0;}
+.login input[type="text"], .login input[type="password"] {background-color: transparent; border-color: #748fa8; height: 4rem; border-radius: 4px; text-align: center; text-transform: uppercase; color: #00bff0;     border-style: solid;
+    border-width: 1px; display: block; font-family: inherit; font-size: 0.875rem; height: 2.3125rem; margin: 0 0 1rem 0; padding: 1.5rem; width: 100%;}
+.login a.button {margin-top: 35px;}
+
+/* -----------------------------------------
+   System Styles
+----------------------------------------- */
+
+.platform-ios.platform-cordova:not(.fullscreen) .bar-header:not(.bar-subheader) > * {margin-top: 2px; text-transform: uppercase;}
+.bar .buttons, .bar .buttons.left-buttons, .bar .buttons.right-buttons {margin-top: 4px!important;}
+.platform-ios.platform-cordova:not(.fullscreen) .bar-header:not(.bar-subheader) {height: 50px!important;}
+.platform-ios.platform-cordova:not(.fullscreen) .has-header, .platform-ios.platform-cordova:not(.fullscreen) .bar-subheader {top: 50px;}
+.menu.gpr {background-color:#00bff0}
+.bar-stable .button {color: #00bff0;}
+
+
+.item {border-color: #00bff0; background-color: #efefef; }
+/* .item-complex .item-content, .item-radio .item-content {background-color: #00bff0;} */
+.item-complex.active .item-content {background-color: red!important; border-color: #ccc}
+
+/* -----------------------------------------
+   Shared Styles
+----------------------------------------- */
+
+header[role="banner"] {background:#33465d url(../img/squadHeader.jpg) no-repeat top center; min-height: 15em; background-size: cover}
+header[role="banner"] h1, h2 {text-transform: uppercase; text-align: center; margin: 0}
+header[role="banner"] h1 {font-weight: 900; font-size: 2.5em; padding-top: 1.5em; color: #fff;}
+header[role="banner"] h2 {font-weight: 700; font-size: .85em; color: #ffa92b; margin-top: -.5em;}
+
+nav[role="primary"] {position: relative;}
+nav[role="primary"] .inline-list {margin: -2.45rem auto 1.0625rem auto;}
+nav[role="primary"] .inline-list > li {text-transform: uppercase; width: 33%; margin: 0; text-align: center; padding: 5px 0;}
+nav[role="primary"] .inline-list > li.active {border-bottom: 3px solid #00bff0; color: #00bff0}
+nav[role="primary"] .inline-list > li a {color: #fff; font-weight: 700}
+nav[role="primary"] .inline-list > li a:focus {color: #f6f9fa}
+nav[role="primary"] .inline-list > li.active a {color: #00bff0}
+
+section[role="players"] ul {margin: 0; text-align: center; padding-bottom: 15px}
+section[role="players"] li {margin: 0 1em .25em 0; text-align: center; display: inline-block; list-style: none;}
+section[role="players"] li img.circle {border-radius: 50%; width: 82px; height: 82px;}
+section[role="players"] li h3 {color: #303b43; text-transform: uppercase; font-size: .85em; font-weight: 700;}
+section[role="players"] li:nth-of-type(3n+3)  {margin: 0;}
+
+footer[role="result"] {background-color: #ffa92b; color: #fff; font-weight: 700; padding: 1rem}
+
+
+
